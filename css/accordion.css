@@ -1,0 +1,57 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter',sans-serif;
+  line-height: 1.6;
+}
+.accordion-container{
+}
+.accordion{
+width: 700px;
+margin: 100px auto;
+}
+.accordion-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.accordion-number,.accordion-title{
+  font-size: 24px;
+  font-weight:500;
+  color: #087f5b;
+}
+.accordion-title{
+  align-self: flex-start;
+}
+.icon{
+  width: 24px;
+  height: 24px;
+  stroke: #087f5b;
+}
+.accordion-para{
+  color: #212529;
+  margin-bottom: 24px;
+}
+
+.accordion-item{
+  color: #495057;
+  margin-left: 20px;
+}
+.accordion-item{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
