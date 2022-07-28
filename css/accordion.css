@@ -61,7 +61,7 @@ body {
 	gap: 5px;
 }
 .open{
-  border-top-color: 5px solid #087f5b;
+  border-top: 5px solid #087f5b;
 }
 .open .hidden-box{
   display: block;
