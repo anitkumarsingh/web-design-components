@@ -15,4 +15,29 @@ FONT SIZE SYSTEM (px)
 body {
 	font-family: 'Inter', sans-serif;
 	line-height: 1.6;
+	display: flex;
+	justify-content: center;
+}
+table {
+	width: 800px;
+	margin: 100px 0;
+  border-collapse: collapse;
+}
+thead th {
+	background-color: #087f5b;
+	color: #fff;
+
+	font-size: 18px;
+}
+th,td{
+  /* border: 2px solid #087f5b; */
+  font-size: 16px;
+  text-align: left;
+  padding: 12px;
+}
+tr:nth-child(odd){
+  background-color: #dee2e6;
+}
+tr:nth-child(even){
+  background-color: #adb5bd;
 }
