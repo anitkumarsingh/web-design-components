@@ -26,6 +26,7 @@ body {
 	display: flex;
 	align-items: center;
 	gap: 86px;
+	position: relative;
 }
 .author-img {
 	height: 200px;
@@ -39,7 +40,7 @@ body {
 	font-weight: 500;
 }
 .testimonial-text {
-	color: #f1f3f5;
+	color: #63e6be;
 	margin-bottom: 20px;
 }
 .author {
@@ -47,27 +48,54 @@ body {
 	font-size: 18px;
 }
 .degination {
-	color: #38d9a9;
-	font-size: 16px;
+	color: #20c997;
+	font-size: 14px;
 }
-button{
-  width: 40px;
-  height: 40px;
-  border: none;
-  border-radius: 100%;
-  box-shadow: 0 17px 18px rgba(0, 0, 0, 0.25);
-}
-.btn-left,.btn-right {
+.btn {
+	width: 40px;
+	height: 40px;
+	border: none;
+	border-radius: 100%;
+	box-shadow: 0 17px 18px rgba(0, 0, 0, 0.25);
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	position: absolute;
+	background-color: #fff;
+	top: 50%;
+	cursor: pointer;
 }
-.btn-left{
-  left: 19%;
+.btn-left {
+	left: 0;
+	transform: translate(-50%, -50%);
 }
-.btn-right{
-  right: 19%;
+.btn-right {
+	right: 0;
+	transform: translate(50%, -50%);
 }
-.btn-icon{
-  width: 24px;
-  height: 24px;
-  border-radius: 500px;
+.btn-icon {
+	width: 24px;
+	height: 24px;
+	border-radius: 500px;
+	stroke: #087f5b;
+}
+.dots {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  gap: 12px;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+  transform: translate(-50%,32px);
+}
+.dot {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	border: 2px solid #087f5b;
+  background-color: #fff;
+}
+.active{
+  background-color: #087f5b;
 }
