@@ -9,53 +9,52 @@ body {
 	grid-template-columns: 80px 200px 1fr 250px;
 	grid-template-rows: 80px 1fr;
 	text-align: center;
-	font-size: 24px;
+	font-size: 20px;
+	font-weight: bold;
+}
+nav,
+main,
+section,
+aside {
+	padding-top: 24px;
 }
 nav {
 	background-color: #343a40;
 	grid-row: 1/-1;
 	color: #fff;
-	padding: 16px 0;
 }
 menu {
 	background-color: #9775fa;
 	grid-column: 2/-1;
 	color: #fff;
-	padding: 16px 0;
-}
-.menu-container {
-  width: 800px;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	gap: 12px;
+	cursor: pointer;
+	padding: 12px;
 }
-.menu-container div{
-  display: inline-block;
+menu div {
+	background-color: #5f3dc4;
+	padding: 8px 16px;
 }
-.menu-container .email-option div{
-  align-items: center;
-  justify-content: space-between;
-  background-color: #5f3dc4;
-  padding: 12px;
-}
-main {
-	background-color: #dee2e6;
-	padding: 16px 0;
-  overflow: scroll;
-}
-.emails{
-  padding: 12px;
-  width: 150px;
-  margin: 10px auto;
-  border:2px solid #212529;
-  background-color: #212529;
-  color: #fff;
+menu div:last-child {
+	background-color: #fa5252;
+	margin-left: auto;
 }
 section {
+	background-color: #dee2e6;
+	overflow: scroll;
+}
+.emails {
+	padding: 12px;
+	width: 150px;
+	margin: 15px auto;
+	background-color: #212529;
+	color: #fff;
+}
+main {
 	background-color: #fff;
-	padding: 16px 0;
 }
 aside {
 	background-color: #dee2e6;
-	padding: 16px 0;
 }
